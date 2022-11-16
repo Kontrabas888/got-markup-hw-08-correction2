@@ -1,0 +1,142 @@
+.solution {
+  background: #c4c4c4;
+  background-image: var(--bg-gradient), url(../images/header-img-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 320px;
+  margin: 0 auto;
+  padding: 118px 0;
+  @include mobile {
+    background: #c4c4c4;
+    background-image: var(--bg-gradient), url(../images/header-img-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 480px;
+    margin: 0 auto;
+    padding: 118px 0;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: var(--bg-gradient), url(../images/header-img-mob-2x.jpg);
+    }
+  }
+
+  @include tablet {
+    background: #c4c4c4;
+    width: 768px;
+    margin: 0 auto;
+    padding: 118px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: var(--bg-gradient), url(../images/header-img-tab.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: var(--bg-gradient), url(../images/header-img-tab-2x.jpg);
+    }
+  }
+  @include desktop {
+    background: #c4c4c4;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 200px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: var(--bg-gradient), url(../images/solution-bg.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: var(--bg-gradient), url(../images/bg-2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1600px) {
+    background: #c4c4c4;
+    width: 1600px;
+    margin: 0 auto;
+    padding: 200px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: var(--bg-gradient), url(../images/solution-bg.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: var(--bg-gradient), url(../images/bg-2x.jpg);
+    }
+  }
+}
+
+.solution__business {
+  @include font(900, 26px, 1.62, 0.06em);
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--som-white-color);
+  margin-bottom: 30px;
+  margin: 0 auto 30px;
+  max-width: 320px;
+  @include mobile {
+    // width: 480px;
+    @include font(900, 26px, 1.62, 0.06em);
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--som-white-color);
+    margin-bottom: 30px;
+    margin: 0 auto 30px;
+    max-width: 480px;
+  }
+  @include desktop {
+    width: 1200px;
+    @include font(900, 44px, 1.36, 0.06em);
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--som-white-color);
+    margin-bottom: 30px;
+    margin: 0 auto 30px;
+    max-width: 696px;
+  }
+}
+
+.solution__btn {
+  // font-family: "Roboto";
+  // font-style: normal;
+  // align-items: center;
+  // text-align: center;
+  @include font(700, 16px, 1.88, 0.06em);
+  color: var(--som-white-color);
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.solution__btn {
+  background-color: var(--main-btn-color);
+  transition: background-color 250ms linear;
+}
+
+.solution__btn {
+  padding: 10px 24px 10px 24px;
+
+  @include desktop {
+    padding: 10px 32px 10px 32px;
+  }
+  border: none;
+  border-radius: 4px;
+}
+
+.solution__container {
+  text-align: center;
+}

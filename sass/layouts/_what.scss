@@ -1,0 +1,48 @@
+.what {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.what__doing {
+  @include font(700, 36px, 1.2, 0.03em);
+  // font-weight: 700;
+  // font-size: 36px;
+  // line-height: 1.2;
+  // letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--discription-topic-color);
+  margin-bottom: 50px;
+}
+
+.what__list {
+  display: flex;
+  gap: 30px;
+}
+
+.what-img-text {
+  position: relative;
+  overflow: hidden;
+}
+
+.what-card-text {
+  margin-top: 224px;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  font-family: "Roboto";
+  font-style: normal;
+  @include font(700, 14px, 1.15, 0.03em);
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.15;
+  // letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--som-white-color);
+  background: rgba(47, 48, 58, 0.8);
+  padding: 27px;
+  width: 100%;
+}
